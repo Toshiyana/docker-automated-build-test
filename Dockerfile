@@ -9,5 +9,5 @@ FROM docker/whalesay:latest
 # パッケージリストの更新 + fortunesのインストール
 RUN apt-get -y update && apt-get install -y fortunes
 
-# CMD: コンテナが作成された後に実行する命令を指定（ここでは，fotunesコマンドを実行）
+# CMD: コンテナが作成された後に実行する命令を指定（ここではfotunesコマンドを実行）
 CMD /usr/games/fortune | cowsay
